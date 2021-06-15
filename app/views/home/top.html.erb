@@ -12,8 +12,25 @@
         <div class="carousel"></div>
         <div class="container">
             <div class="container-left">
-                <div class="serch"></div>
-                <div class="login"></div>
+                <div class="serch">
+                    <div class="border">
+                        <p>商品検索</p>
+                    </div>
+                    <div class="serch-btn">
+                        <input type="serch" name="serch" placeholder="キーワードを入力" >
+                        <input type="submit" name="submit" value="検索" >
+                    </div>
+                </div>
+                <div class="login">
+                    <div class="border">
+                        <p>ログイン</p>
+                    </div>
+                    <ul class="list-style">
+                        <li><%=link_to("ログイン","/#",) %></li>
+                        <li><%=link_to("会員登録","/#",) %></li>
+                        <li><%=link_to("パスワード再発行","/#",) %></li>
+                    </ul>                    
+                </div>
                 <div class="pr-banner"></div>
                 <div class="category"></div>
                 <div class="pickup-img"></div>
