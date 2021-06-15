@@ -56,18 +56,20 @@ main {
 .container-left {
     grid-area: container-left;
     display: grid;
-    grid-template: 
-        "";
 }
 
 .container-right {
     grid-area: container-right;
+    display: grid;
 }
-
 
 
 .sub {
     grid-area: sub;
+    display: grid;
+    grid-template: 
+        "sub-left sub-right" 
+        / 1fr 4fr;
 }
 
 footer {
