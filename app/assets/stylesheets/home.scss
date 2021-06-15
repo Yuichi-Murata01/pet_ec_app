@@ -10,6 +10,8 @@ body {
         "main"   1fr
         "sub"    850px
         "footer" 180px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 header {
@@ -27,6 +29,10 @@ header {
 
 .header-img {
     grid-area: header-img;
+    display: grid;
+    grid-template: 
+        "header-img-left header-img-right" 170px
+        / 380px 1fr;
 }
 
 .header-list {
