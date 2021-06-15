@@ -38,8 +38,33 @@ main {
     display: grid;
     grid-template: 
         "carousel"  580px
-        "container" 1fr;
+        "container" 1500px;
 }
+
+.carousel {
+    grid-area: carousel;
+}
+
+.container {
+    grid-area: container;
+    display: grid;
+    grid-template: 
+        "container-left container-right" 1fr
+        / 1fr 4fr;
+}
+
+.container-left {
+    grid-area: container-left;
+    display: grid;
+    grid-template: 
+        "";
+}
+
+.container-right {
+    grid-area: container-right;
+}
+
+
 
 .sub {
     grid-area: sub;
