@@ -2,4 +2,49 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+// layout調整
+body {
+    display: grid;
+    grid-template: 
+        "header" 280px
+        "main"   1fr
+        "sub"    850px
+        "footer" 180px;
+}
 
+header {
+    grid-area: header;
+    display: grid;
+    grid-template: 
+        "header-text"   auto
+        "header-img"    170px
+        "header-list"   60px;
+}
+
+.header-text {
+    grid-area: header-text;
+}
+
+.header-img {
+    grid-area: header-img;
+}
+
+.header-list {
+    grid-area: header-list;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template: 
+        "carousel"  580px
+        "container" 1fr;
+}
+
+.sub {
+    grid-area: sub;
+}
+
+footer {
+    grid-area: footer;
+}
