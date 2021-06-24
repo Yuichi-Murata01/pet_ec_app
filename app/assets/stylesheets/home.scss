@@ -119,8 +119,41 @@ footer {
 
 // container-right
 
+// container-rightの色の調整
+
+.color-black {
+    background-color: #000;
+    color: #fff;
+}
 
 
+
+.info li {
+    list-style: none;
+    display: grid;
+    grid-template: 
+        "square .. info-text"
+        / 50px 5px auto;
+}
+
+
+.square {
+    grid-area: square;
+    font-weight: bold;
+    border: solid 1px #000000;
+    height: 60px;
+    background-color: #fff;
+}
+
+
+.square p {
+    margin: 0 0;
+    text-align: center;
+}
+
+.info-text {
+    grid-area: info-text;
+}
 
 
 // subの装飾
