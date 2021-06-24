@@ -6,7 +6,7 @@
 body {
     display: grid;
     grid-template: 
-        "header" 280px
+        "header" 
         "main"   1fr
         "sub"    850px
         "footer" 180px;
@@ -20,7 +20,7 @@ header {
     grid-template: 
         "header-text"   auto
         "header-img"    170px
-        "header-list"   60px;
+        "header-list"   auto;
 }
 
 .header-text {
@@ -37,6 +37,44 @@ header {
 
 .header-list {
     grid-area: header-list;
+    display: grid;
+    grid-template: 
+        "header-menus-left header-menus-right"
+        / 1fr 1fr;
+}
+
+#header-menus-left {
+    grid-area: header-menus-left;
+    display: grid;
+    grid-template: 
+        "header-menus-left header-menus-right header-menus-left"
+        / 1fr 1fr 1fr;
+}
+
+.header-menus-left {
+    grid-area: header-menus-img;
+    font-weight: bold;
+    border: solid 1px #000000;
+}
+
+
+
+.header-menus-right {
+    grid-area: header-menus-right;
+}
+
+#header-menus-img {
+    display: grid;
+    grid-template:
+        "... ... ... ..." 1fr
+        "img img img img" 1fr
+        "... ... ... ..." 1fr
+        / 1fr 1fr 1fr 1fr;
+
+}
+
+.header-menus-img {
+    grid-area: img;
 }
 
 main {
