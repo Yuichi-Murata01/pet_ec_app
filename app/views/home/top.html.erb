@@ -127,18 +127,44 @@
   スクロールバー付きボックスの作成
 <%
 =end%>
-                <p class="news">
-                    テキストテキスト<br>
-                    テキストテキスト<br>
-                    テキストテキスト<br>
-                    テキストテキスト<br>
-                    テキストテキスト<br>
-                    テキストテキスト<br>
-                    テキストテキスト<br>
-                    テキストテキスト<br>
-                    テキストテキスト<br>
-                </p>
-                <div class="pickup-clothes"></div>
+                <div id="news">
+                    <p class="news">
+                        テキストテキスト<br>
+                        テキストテキスト<br>
+                        テキストテキスト<br>
+                        テキストテキスト<br>
+                        テキストテキスト<br>
+                        テキストテキスト<br>
+                        テキストテキスト<br>
+                        テキストテキスト<br>
+                        テキストテキスト<br>
+                    </p>
+                    <div class="read-more">
+                        <li><%=link_to("全ての新着商品を見る","/#",class:"link-css") %></li>
+                    </div>
+                </div>
+                <div id="pickup-clothes">
+                    <%=link_to image_tag('pickupclothes_tit.gif',class: "pickup-clothes-img"),"/#" %>
+                    <div id="pickup-items">
+                        <div class="pickup-container">
+                            <div class="pickup-items">
+                                <%=link_to image_tag('14898_s01.jpeg',class: "pickup-items-img"),"/#" %>
+                                <p></p>
+                                <li><%=link_to("MORE INFO","/#",class:"more-info") %></li>
+                            </div>
+                            <div class="pickup-items">
+                                <%=link_to image_tag('14899_s01.jpeg',class: "pickup-items-img"),"/#" %>
+                                <p></p>
+                                <li><%=link_to("MORE INFO","/#",class:"more-info") %></li>
+                            </div>
+                            <div class="pickup-items">
+                                <%=link_to image_tag('14999_s01.jpeg',class: "pickup-items-img"),"/#" %>
+                                <p></p>
+                                <li><%=link_to("MORE INFO","/#",class:"more-info") %></li>
+                            </div>
+                        </div>
+                    <div>
+                </div>
                 <div class="new-arrive"></div>
                 <div class="hot-item"></div>
                 <div class="ranking"></div>

@@ -107,6 +107,25 @@ main {
     display: grid;
 }
 
+.pickup-container {
+    display: gird;
+    grid-template: 
+        "pickup-items pickup-items pickup-items" 350px
+        "pickup-items pickup-items pickup-items" 350px
+        "pickup-items pickup-items pickup-items" 350px
+        "pickup-items pickup-items pickup-items" 350px
+        "pickup-items pickup-items pickup-items" 350px
+        "pickup-items pickup-items pickup-items" 350px
+        "pickup-items pickup-items pickup-items" 350px
+        "pickup-items pickup-items pickup-items" 350px
+        "pickup-items pickup-items pickup-items" 350px
+        "pickup-items pickup-items pickup-items" 350px
+        / 1fr 1f 1fr;
+}
+
+.pickup-items {
+    grid-area: pickup-items;
+}
 
 .sub {
     grid-area: sub;
@@ -207,6 +226,14 @@ footer {
     overflow: scroll;
     border: 1px solid #000;
 
+}
+
+.pickup-clothes-img {
+    width: 100%;
+}
+
+.pickup-items-img {
+    width: 100%;
 }
 
 // subの装飾
