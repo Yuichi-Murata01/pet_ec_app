@@ -39,24 +39,28 @@ header {
     grid-area: header-list;
     display: grid;
     grid-template: 
-        "header-menus-left header-menus-right"
+        "header-menus-left header-menus-right" 50px
         / 1fr 1fr;
 }
 
 #header-menus-left {
     grid-area: header-menus-left;
-    display: grid;
-    grid-template: 
-        "header-menus-left header-menus-right header-menus-left"
-        / 1fr 1fr 1fr;
+    display:flex;
+    justify-content: space-between;
+    padding: 0 15px;
 }
 
 .header-menus-left {
-    grid-area: header-menus-img;
-    font-weight: bold;
     border: solid 1px #000000;
+    width: 100%;
+
 }
 
+.header-menus-left p {
+    text-align: center;
+    margin: 3px auto;
+    font-size: 13px;
+}
 
 
 .header-menus-right {
