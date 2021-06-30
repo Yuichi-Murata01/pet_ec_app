@@ -108,23 +108,12 @@ main {
 }
 
 .pickup-container {
-    display: gird;
-    grid-template: 
-        "pickup-items pickup-items pickup-items" 350px
-        "pickup-items pickup-items pickup-items" 350px
-        "pickup-items pickup-items pickup-items" 350px
-        "pickup-items pickup-items pickup-items" 350px
-        "pickup-items pickup-items pickup-items" 350px
-        "pickup-items pickup-items pickup-items" 350px
-        "pickup-items pickup-items pickup-items" 350px
-        "pickup-items pickup-items pickup-items" 350px
-        "pickup-items pickup-items pickup-items" 350px
-        "pickup-items pickup-items pickup-items" 350px
-        / 1fr 1f 1fr;
+    display: flex;
 }
 
 .pickup-items {
     grid-area: pickup-items;
+    padding: 1%;
 }
 
 .sub {
@@ -233,9 +222,29 @@ footer {
 }
 
 .pickup-items-img {
-    width: 100%;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
 }
 
+.pickup-items p {
+    display: block;
+    margin: 0 auto;
+    padding-left: 15px;
+}
+
+.pickup-items li {
+    list-style: none;
+    background-color: #FFF000;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0px 5%;
+}
+
+.more-info a {
+    text-decoration: none;
+}
 // subの装飾
 
 
