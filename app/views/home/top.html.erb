@@ -46,7 +46,11 @@
         </div>
     </header>
     <main>
-        <div class="carousel"></div>
+        <div id="carousel">
+            <%=link_to image_tag('preclearance_slide.jpeg',class: "carousel"),"/#" %>
+            <%=link_to image_tag('preclearance_slide.jpeg',class: "carousel"),"/#" %>
+            <%=link_to image_tag('preclearance_slide.jpeg',class: "carousel"),"/#" %>
+        </div>
         <div class="container">
             <div class="container-left">
                 <div class="serch">
@@ -229,7 +233,15 @@
         </div>
     </main>
     <div class="sub">
-        <div class="sub-left"></div>
+        <div class="sub-left">
+        <p>jQuery稼働テスト(未稼働)</p>
+        <p>jQuery稼働テスト</p>
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $("p").text("jQuery稼働テスト(稼働中)");
+        });
+        </script>
+        </div>
         <div class="sub-right"></div>
     </div>
     <footer>

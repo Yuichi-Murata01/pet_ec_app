@@ -97,9 +97,15 @@ main {
         "container" 1500px;
 }
 
-.carousel {
+#carousel {
     grid-area: carousel;
 }
+
+.carousel {
+    height: 100%;
+}
+
+
 
 .container {
     grid-area: container;
