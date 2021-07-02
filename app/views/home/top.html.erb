@@ -22,20 +22,24 @@
         </div>
         <div class="header-list">
             <div id="header-menus-left">
-                <%= link_to "#home" do %>
+                <%= link_to "#home",{class:"header_menus_left"} do %>
                     <div class="header-menus-left">
-                            <p>iDog & iCat とは</p>
-                            <P>About iDog & iCat</p>
+                        <p>iDog & iCat とは</p>
+                        <P class="light_ocher">About iDog & iCat</p>
                     </div>
                 <% end %>
+                <%= link_to "#home",{class:"header_menus_left"} do %>
                     <div class="header-menus-left">
                         <p>お問い合わせ</p>
-                        <P>inquiry</p>
+                        <P class="light_ocher">inquiry</p>
                     </div>
+                <% end %>
+                <%= link_to "#home",{class:"header_menus_left"} do %>
                     <div class="header-menus-left">
                         <p>ノベルティ・OEM</p>
-                        <P>Novelty Item & OEM</p>
+                        <P class="light_ocher">Novelty Item & OEM</p>
                     </div>
+                <% end %>
             </div>
             <div class="header-menus-right">
                 <div id="header-menus-img">
