@@ -1,0 +1,17 @@
+<h1 class="display-5 text-primary">Users#index</h1>
+<p><%= @user_msg %></p>
+<table class="table">
+    <tr>
+        <th>Id</th><th>Name</th><th>Age</th><th>Mail</th>
+    </tr>
+    <% @user_data.each do |obj| %>
+    <tr>
+        <td><%= obj.id %></td>
+        <td><%= obj.name %></td>
+        <td><%= obj.age %></td>
+        <td><%= obj.area %></td>
+        <td><%= obj.mail %></td>
+        <td><%= obj.password %></td>
+    </tr>
+    <% end %>
+</table>
