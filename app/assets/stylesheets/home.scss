@@ -4,285 +4,276 @@
 
 // layout調整
 body {
-    display: grid;
-    grid-template: 
-        "header" 
-        "main"   1fr
-        "sub"    850px
-        "footer" 180px;
-    max-width: 1200px;
-    margin: auto;
+  display: grid;
+  grid-template:
+    "header"
+    "main" 1fr
+    "sub" 850px
+    "footer" 180px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 header {
-    grid-area: header;
-    display: grid;
-    grid-template: 
-        "header-text"   auto
-        "header-img"    170px
-        "header-list"   auto;
+  grid-area: header;
+  display: grid;
+  grid-template:
+    "header-text" auto
+    "header-img" 170px
+    "header-list" auto;
 }
 
 .header-text {
-    grid-area: header-text;
+  grid-area: header-text;
 }
 
 .header-img {
-    grid-area: header-img;
-    display: grid;
-    grid-template: 
-        "header-img-left header-img-right" 170px
-        / 380px 1fr;
+  grid-area: header-img;
+  display: grid;
+  grid-template:
+    "header-img-left header-img-right" 170px
+    / 380px 1fr;
 }
 
 .header-list {
-    grid-area: header-list;
-    display: grid;
-    grid-template: 
-        "header-menus-left header-menus-right" 50px
-        / 1fr 1fr;
+  grid-area: header-list;
+  display: grid;
+  grid-template:
+    "header-menus-left header-menus-right" 50px
+    / 1fr 1fr;
 }
 
 #header-menus-left {
-    grid-area: header-menus-left;
-    display:flex;
-    justify-content: space-between;
-    padding: 0 15px;
+  grid-area: header-menus-left;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
 }
 
-
-
 .header-menus-left {
-    border: solid 1px #000000;
-    width: 100%;
-    color: #000;
+  border: solid 1px #000000;
+  width: 100%;
+  color: #000;
 }
 
 .header-menus-left a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-
 .header-menus-left:hover {
-    border: solid 1px #000000;
-    width: 100%;
-    background-color: #ff0000;
-    color: #fff;
+  border: solid 1px #000000;
+  width: 100%;
+  background-color: #ff0000;
+  color: #fff;
 }
 
 .header-menus-left p {
-    text-align: center;
-    margin: 3px auto;
-    font-size: 13px;
+  text-align: center;
+  margin: 3px auto;
+  font-size: 13px;
 }
 
-
 .header-menus-right {
-    grid-area: header-menus-right;
+  grid-area: header-menus-right;
 }
 
 #header-menus-img {
-    display: grid;
-    grid-template:
-        "... ... ... ..." 1fr
-        "img img img img" 1fr
-        "... ... ... ..." 1fr
-        / 1fr 1fr 1fr 1fr;
-
+  display: grid;
+  grid-template:
+    "... ... ... ..." 1fr
+    "img img img img" 1fr
+    "... ... ... ..." 1fr
+    / 1fr 1fr 1fr 1fr;
 }
 
 .header-menus-img {
-    grid-area: img;
+  grid-area: img;
 }
 
 main {
-    grid-area: main;
-    display: grid;
-    grid-template: 
-        "carousel"  580px
-        "container" 1500px;
+  grid-area: main;
+  display: grid;
+  grid-template:
+    "carousel" 580px
+    "container" 1500px;
 }
 
 #carousel {
-    grid-area: carousel;
+  grid-area: carousel;
 }
 
 .carousel {
-    height: 100%;
+  height: 100%;
 }
 
-
-
 .container {
-    grid-area: container;
-    display: grid;
-    grid-template: 
-        "container-left container-right" 1fr
-        / 1fr 4fr;
+  grid-area: container;
+  display: grid;
+  grid-template:
+    "container-left container-right" 1fr
+    / 1fr 4fr;
 }
 
 .container-left {
-    grid-area: container-left;
-    display: grid;
+  grid-area: container-left;
+  display: grid;
 }
 
 .container-right {
-    grid-area: container-right;
-    display: grid;
+  grid-area: container-right;
+  display: grid;
 }
 
 .pickup-container {
-    display: flex;
+  display: flex;
 }
 
 .pickup-items {
-    grid-area: pickup-items;
-    padding: 1%;
+  grid-area: pickup-items;
+  padding: 1%;
 }
 
 .sub {
-    grid-area: sub;
-    display: grid;
-    grid-template: 
-        "sub-left sub-right" 
-        / 1fr 4fr;
+  grid-area: sub;
+  display: grid;
+  grid-template:
+    "sub-left sub-right"
+    / 1fr 4fr;
 }
 
 footer {
-    grid-area: footer;
+  grid-area: footer;
 }
-
 
 // 全体の装飾
 
 .list-style {
-    list-style: none;
-    border-bottom: none;
+  list-style: none;
+  border-bottom: none;
 }
 
 // headerの装飾
 
-
 .header_menus_left {
-    width: 100%;
-    text-decoration: none;
+  width: 100%;
+  text-decoration: none;
 }
 
 .light_ocher {
-    color: #d3d3d3;
+  color: #d3d3d3;
 }
 
 // mainの装飾
 
-
-
+// carouselの装飾
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}
+#slide1 {
+  background-color: #ff9999;
+}
+#slide2 {
+  background-color: #99ff99;
+}
+#slide3 {
+  background-color: #9999ff;
+}
 
 // container-left
 .serch {
-    justify-content: center;
+  justify-content: center;
 }
 
 .serch p {
-    text-align: center;
+  text-align: center;
 }
 
 .serch-btn {
-    background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 .login ul {
-    padding: 0;
+  padding: 0;
 }
-
-
 
 // container-right
 
 // container-rightの色の調整
 
 .color-black {
-    background-color: #000;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
 }
-
-
 
 .info li {
-    list-style: none;
-    display: grid;
-    grid-template: 
-        "square .. info-text"
-        / 50px 5px auto;
+  list-style: none;
+  display: grid;
+  grid-template:
+    "square .. info-text"
+    / 50px 5px auto;
 }
-
 
 .square {
-    grid-area: square;
-    font-weight: bold;
-    border: solid 1px #000000;
-    height: 60px;
-    background-color: #fff;
+  grid-area: square;
+  font-weight: bold;
+  border: solid 1px #000000;
+  height: 60px;
+  background-color: #fff;
 }
 
-
 .square p {
-    margin: 0 0;
-    text-align: center;
+  margin: 0 0;
+  text-align: center;
 }
 
 .info-text {
-    grid-area: info-text;
+  grid-area: info-text;
 }
 
 .info-text-img {
-    width: 70%;
+  width: 70%;
 }
 
 .read-more li {
-    list-style: none;
-    text-align: right;
+  list-style: none;
+  text-align: right;
 }
 
 .news {
-    height: 110px;
-    overflow: scroll;
-    border: 1px solid #000;
-
+  height: 110px;
+  overflow: scroll;
+  border: 1px solid #000;
 }
 
 .pickup-clothes-img {
-    width: 100%;
+  width: 100%;
 }
 
 .pickup-items-img {
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    border-bottom: 1px solid #ddd;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
 }
 
 .pickup-items p {
-    display: block;
-    margin: 0 auto;
-    padding-left: 15px;
+  display: block;
+  margin: 0 auto;
+  padding-left: 15px;
 }
 
 .pickup-items li {
-    list-style: none;
-    background-color: #FFF000;
-    padding: 10px 0;
-    text-align: center;
-    margin: 0px 5%;
+  list-style: none;
+  background-color: #fff000;
+  padding: 10px 0;
+  text-align: center;
+  margin: 0px 5%;
 }
 
 .more-info a {
-    text-decoration: none;
+  text-decoration: none;
 }
 // subの装飾
 
-
-
-
 // footerの装飾
-
-
