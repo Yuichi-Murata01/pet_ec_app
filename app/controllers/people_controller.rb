@@ -24,4 +24,9 @@ class PeopleController < ApplicationController
     redirect_to '/people'
   end
 
+  private
+  def person_params
+    params.require(:person).permit(:name, :age, :mail)
+  end
+
 end

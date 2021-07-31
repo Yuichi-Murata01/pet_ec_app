@@ -11,19 +11,24 @@
 
 //= require_tree .
 
-$(function() {
-    $('.a').slick({
-        dots: true,
-    });
-});
+
 
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
+$(function() {
+    $('.a').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed:1000,
+    });
+});
+
 
 
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
