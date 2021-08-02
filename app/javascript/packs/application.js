@@ -4,10 +4,11 @@
 // that code so it'll be compiled.
 
 //= require jquery
-//= require jquery_ujs
-
+//= require jquery.turbolinks
 //= require rails-ujs
 //= require activestorage
+//= require turbolinks
+
 
 //= require_tree .
 
@@ -18,7 +19,7 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
-$(function() {
+window.addEventListener('DOMContentLoaded', function() {
     $('.a').slick({
         dots: true,
         autoplay: true,
@@ -26,7 +27,7 @@ $(function() {
     });
 });
 
-
+console.log(slider());
 
 Rails.start()
 Turbolinks.start()
