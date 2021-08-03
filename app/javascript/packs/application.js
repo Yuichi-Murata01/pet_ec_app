@@ -3,13 +3,11 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
+//
 //= require jquery
-//= require jquery.turbolinks
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
-
-
 //= require_tree .
 
 
@@ -19,7 +17,12 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
-window.addEventListener('DOMContentLoaded', function() {
+
+// $(document).ready(function() {
+//     $("button").text("Hello JQuery on Rails");
+//  });
+
+$(document).ready(function() {
     $('.a').slick({
         dots: true,
         autoplay: true,
@@ -27,7 +30,15 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-console.log(slider());
+
+// window.addEventListener('DOMContentLoaded', function() {
+//     $('.a').slick({
+//         dots: true,
+//         autoplay: true,
+//         autoplaySpeed:1000,
+//     });
+// });
+
 
 Rails.start()
 Turbolinks.start()
