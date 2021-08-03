@@ -22,14 +22,21 @@ import "channels"
 //     $("button").text("Hello JQuery on Rails");
 //  });
 
-$(document).ready(function() {
+// $(document).ready(function() {
+//     $('.a').slick({
+//         dots: true,
+//         autoplay: true,
+//         autoplaySpeed:1000,
+//     });
+// });
+
+$(function() {
     $('.a').slick({
         dots: true,
         autoplay: true,
-        autoplaySpeed:1000,
+        autoplaySpeed: 1000,
     });
 });
-
 
 // window.addEventListener('DOMContentLoaded', function() {
 //     $('.a').slick({
